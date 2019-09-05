@@ -1,0 +1,17 @@
+title: trying-something-new
+tagline: A brand new course on Learning Lab
+description: This is a template
+template:
+  repo: trying-something-new-template
+  name: trying-something-new
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
